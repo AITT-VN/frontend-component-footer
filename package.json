@@ -1,6 +1,6 @@
 {
-  "name": "@zephyrphone1/frontend-component-footer",
-  "version": "1.0.0-semantically-released",
+  "name": "@zephyrphone1/ohstem-frontend-component-footer",
+  "version": "1.0.0",
   "description": "Footer component for use when building Open edX frontend applications",
   "main": "dist/index.js",
   "publishConfig": {
