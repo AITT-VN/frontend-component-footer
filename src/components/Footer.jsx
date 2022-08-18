@@ -38,30 +38,30 @@ class SiteFooter extends React.Component {
           <div className="d-flex w-40">
             <div className="w-50">
               <a className="d-block mt-1" href="https://ohstem.vn/ve-ohstem-education/">
-                Về OhStem
+                <p class="fs-5">Về OhStem</p>
               </a>
               <a className="d-block mt-1" href="https://ohstem.vn/tin-tuc/">
-                Tin tức
+                <p class="fs-5">Tin tức</p>
               </a>
               <a className="d-block mt-1" href="https://ohstem.vn/lien-he/">
-                Liên hệ
+                <p class="fs-5">Liên hệ</p>
               </a>
             </div>
             <div className="w-50">
-              <a className="d-block mt-1" href="#">
-                Các khóa học
+              <a className="d-block mt-1" href="{config.LMS_BASE_URL}/courses">
+                <p class="fs-5">Các khóa học</p>
               </a>
-              <a className="d-block mt-1" href="#">
-                Các câu hỏi thường gặp
+              <a className="d-block mt-1" href="{config.LMS_BASE_URL}/faq">
+                <p class="fs-5">Các câu hỏi thường gặp</p>
               </a>
-              <a className="d-block mt-1" href="#">
-                Trung tâm trợ giúp
+              <a className="d-block mt-1" href="https://discord.com/channels/962380027536764968/962380027972968450">
+                <p class="fs-5">Trung tâm trợ giúp</p>
               </a>
             </div>
           </div>
           <div className="d-flex w-50">
             <div className="w-50">
-              <p>Kết nối cùng OhStem</p>
+              <p class="fs-5">Kết nối cùng OhStem</p>
               <div className="d-flex">
                 <div className="mr-2">
                   <a
@@ -85,31 +85,25 @@ class SiteFooter extends React.Component {
                     <img src={YoutubeImg} width="30px" height="30px"/>
                   </a>
                 </div>
-                <div>
-                  <a
-                    href="https://github.com/AITT-VN/"
-                    target="_blank"
-                    rel="noopener nofollow"
-                    title="GitHub"
-                    aria-label="GitHub"
-                  >
-                    <img src={GithubImg} width="30px" height="30px"/>
-                  </a>
-                </div>
               </div>
+              <div class="u-flex u-flexColumn u-marginBottomLarge">
+                <a class="u-block u-marginTopSmall" href="https://openedx.org/">
+                  <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Powered by Open edX" width="80" />
+                </a>
+                <span class="fs-5">edX, Open edX và các biểu tượng tương ứng đã được đăng ký tên thương mại thuộc edX Inc.</span>
+            </div>
             </div>
             <div className="w-50">
               <a className="d-block" href="https://ohstem.vn">
                 <img src="https://ohstem.vn/wp-content/uploads/2021/01/logo-ohstem.png" />
               </a>
-              <p className="mt-2">
-                OhStem Education mong muốn góp phần khơi nguồn sáng tạo của thế hệ trẻ Việt Nam, giúp các em có sự chuẩn
-                bị tốt nhất cho tương lai trong kỷ nguyên số này.
-              </p>
             </div>
           </div>
         </div>
-        <p>&copy; 2022: Bản quyền thuộc về OhStem Education và đã được bảo hộ</p>
+        <div class="container-fluid d-flex justify-content-center">
+          <p class="fs-5">&copy; 2022: Bản quyền thuộc về OhStem Education và đã được bảo hộ</p>
+        </div>
+        
       </footer>
     );
   }
