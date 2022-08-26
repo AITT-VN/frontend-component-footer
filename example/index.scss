@@ -4,3 +4,58 @@
 @import "@edx/brand/paragon/overrides";
 
 @import "@edx/frontend-component-footer/footer";
+
+
+$gray-footer: #fcfcfc !default;
+
+.footer {
+  background-color: $gray-footer;
+}
+
+.wrapper-footer footer .wrapper-logo img {
+  height: 42px;
+}
+
+.wrapper-footer {
+  box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0,0,0,0.3);
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 20px;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.wrapper-footer footer .copyright {
+  text-align: left;
+  margin: -2px 0 8px;
+  font-size: 0.8em;
+  color: #767676;
+}
+
+.wrapper-footer footer .site-nav {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.wrapper-footer footer .footer-about-openedx {
+  float: right;
+}
+
+// Utils
+
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
+}

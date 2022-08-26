@@ -5,6 +5,10 @@ import { sendTrackEvent } from "@edx/frontend-platform/analytics";
 import { ensureConfig } from "@edx/frontend-platform/config";
 import { AppContext } from "@edx/frontend-platform/react";
 
+import messages from './Footer.messages';
+import LanguageSelector from './LanguageSelector';
+
+import './index.scss';
 import FacebookImg from "../images/facebook.png"
 import YoutubeImg from "../images/youtube.png"
 import GithubImg from "../images/github.png"
@@ -32,79 +36,51 @@ class SiteFooter extends React.Component {
   }
 
   render() {
+    const {
+      supportedLanguages,
+      onLanguageSelected,
+      logo,
+      intl,
+    } = this.props;
+    const showLanguageSelector = supportedLanguages.length > 0 && onLanguageSelected;
+    const { config } = this.context;
+
     return (
-      <footer role="contentinfo" className="footer border-top py-3 px-4">
-        <div className="container-fluid d-flex justify-content-between">
-          <div className="d-flex w-40">
-            <div className="w-50">
-              <a className="d-block mt-1" href="https://ohstem.vn/ve-ohstem-education/">
-                <p class="fs-5">Về OhStem</p>
-              </a>
-              <a className="d-block mt-1" href="https://ohstem.vn/tin-tuc/">
-                <p class="fs-5">Tin tức</p>
-              </a>
-              <a className="d-block mt-1" href="https://ohstem.vn/lien-he/">
-                <p class="fs-5">Liên hệ</p>
-              </a>
-            </div>
-            <div className="w-50">
-              <a className="d-block mt-1" href="{config.LMS_BASE_URL}/courses">
-                <p class="fs-5">Các khóa học</p>
-              </a>
-              <a className="d-block mt-1" href="{config.LMS_BASE_URL}/faq">
-                <p class="fs-5">Các câu hỏi thường gặp</p>
-              </a>
-              <a className="d-block mt-1" href="https://discord.com/channels/962380027536764968/962380027972968450">
-                <p class="fs-5">Trung tâm trợ giúp</p>
-              </a>
-            </div>
-          </div>
-          <div className="d-flex w-50">
-            <div className="w-50">
-              <p class="fs-5">Kết nối cùng OhStem</p>
-              <div className="d-flex">
-                <div className="mr-2">
-                  <a
-                    href="https://www.facebook.com/ohstem.aitt/"
-                    target="_blank"
-                    rel="noopener nofollow"
-                    title="Facebook"
-                    aria-label="Facebook"
-                  >
-                    <img src={FacebookImg} width="30px" height="30px"/>
-                  </a>
+      <div class="container-fluid footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <img src="static/images/home/s1/logo.png" class="img-responsive logo">
+                    <p class="my-3">Kết nối với chúng tôi:</p>
+                    <a href="#" target="_blank" class="social-icon"><img
+                            src="static/images/home/footer/facebook.png"></a>
+                    <a href="#" target="_blank" class="social-icon"><img
+                            src="static/images/home/footer/youtube.png"></a>
                 </div>
-                <div className="mr-2">
-                  <a
-                    href="https://www.youtube.com/channel/UCMPfFJjpAUEy5JiNlKKw-1A"
-                    target="_blank"
-                    rel="noopener nofollow"
-                    title="YouTube"
-                    aria-label="YouTube"
-                  >
-                    <img src={YoutubeImg} width="30px" height="30px"/>
-                  </a>
+                <div class="col-12 col-sm-8">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <p><a href="#">Các khóa học</a></p>
+                            <p><a href="#">Các câu hỏi thường gặp</a></p>
+                            <p><a href="#">Trung tâm trợ giúp</a></p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <p><a href="#">Giới thiệu về OhStem</a></p>
+                            <p><a href="#">Quyền riêng tư</a></p>
+                            <p><a href="#">Điều khoản</a></p>
+                        </div>
+                        <div class="col-sm-12 col-md-4 credit">
+                            <p><img src="static/images/home/footer/openedx.png"></p>
+                            <p><img src="static/images/home/footer/tutor.png"></p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="u-flex u-flexColumn u-marginBottomLarge">
-                <a class="u-block u-marginTopSmall" href="https://openedx.org/">
-                  <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Powered by Open edX" width="80" />
-                </a>
-                <span class="fs-5">edX, Open edX và các biểu tượng tương ứng đã được đăng ký tên thương mại thuộc edX Inc.</span>
             </div>
-            </div>
-            <div className="w-50">
-              <a className="d-block" href="https://ohstem.vn">
-                <img src="https://ohstem.vn/wp-content/uploads/2021/01/logo-ohstem.png" />
-              </a>
-            </div>
-          </div>
+
+            <p class="copy-right text-center">© 2022: Bản quyền thuộc về OhStem Education và đã được bảo hộ</p>
         </div>
-        <div class="container-fluid d-flex justify-content-center">
-          <p class="fs-5">&copy; 2022: Bản quyền thuộc về OhStem Education và đã được bảo hộ</p>
-        </div>
-        
-      </footer>
+        <hr class="hr-footer" />
+    </div>
     );
   }
 }
