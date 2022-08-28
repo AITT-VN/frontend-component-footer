@@ -11,7 +11,10 @@ import LanguageSelector from './LanguageSelector';
 import './index.scss';
 import FacebookImg from "../images/facebook.png"
 import YoutubeImg from "../images/youtube.png"
-import GithubImg from "../images/github.png"
+import LogoLargeImg from "../images/logo_large.png"
+import OpenEdxImg from "../images/openedx.png"
+import TutorImg from "../images/tutor.png"
+
 
 ensureConfig(["LOGO_TRADEMARK_URL"], "Footer component");
 
@@ -50,13 +53,13 @@ class SiteFooter extends React.Component {
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-4">
-                    <img src="static/images/home/s1/logo.png" class="img-responsive logo" />
+                    <img src={LogoLargeImg} class="img-responsive logo" />
                     <p class="my-3">Kết nối với chúng tôi:</p>
                     <a href="#" target="_blank" class="social-icon">
-                      <img src="static/images/home/footer/facebook.png" />
+                      <img src={FacebookImg} />
                     </a>
                     <a href="#" target="_blank" class="social-icon">
-                      <img src="static/images/home/footer/youtube.png" />
+                      <img src={YoutubeImg} />
                     </a>
                 </div>
                 <div class="col-12 col-sm-8">
@@ -72,8 +75,8 @@ class SiteFooter extends React.Component {
                             <p><a href="#">Điều khoản</a></p>
                         </div>
                         <div class="col-sm-12 col-md-4 credit">
-                            <p><img src="static/images/home/footer/openedx.png" /></p>
-                            <p><img src="static/images/home/footer/tutor.png" /></p>
+                            <p><img src={OpenEdxImg} /></p>
+                            <p><img src={TutorImg} /></p>
                         </div>
                     </div>
                 </div>

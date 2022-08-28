@@ -1,65 +1,24 @@
-$gray-footer: #fcfcfc !default;
-
-.footer {
-  background-color: $gray-footer;
-}
-
-.wrapper-footer footer .wrapper-logo img {
-  height: 42px;
-}
-
-.wrapper-footer {
-  box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.1);
-  border-top: 1px solid rgba(0,0,0,0.3);
-  background-color: #fff;
-  margin-top: 10px;
-  padding: 20px;
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-.wrapper-footer footer .copyright {
-  text-align: left;
-  margin: -2px 0 8px;
-  font-size: 0.8em;
-  color: #767676;
-}
-
-.wrapper-footer footer .site-nav {
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.wrapper-footer footer .footer-about-openedx {
-  float: right;
-}
-
-// Utils
-
-
-.w-30 {
-  width: 30%;
-}
-
-.w-40 {
-  width: 40%;
-}
-
-.w-60 {
-  width: 60%;
-}
-
-.w-70 {
-  width: 70%;
-}
-
 .footer {
   background-color: #333333;
   color: #ffffff;
   position: relative;
+  max-width: 100%;
+}
+
+.footer a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.footer a:hover {
+  text-decoration: underline !important;
 }
 
 .footer>.container {
   padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
 }
 
 .hr-footer {
@@ -94,6 +53,14 @@ $gray-footer: #fcfcfc !default;
 
 .credit img {
   width: 120px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer>.container {
+      max-width: 1204px !important;
+      padding-left: 32px !important;
+      padding-right: 32px !important;
+  }
 }
 
 @media only screen and (max-width: 575px) {
