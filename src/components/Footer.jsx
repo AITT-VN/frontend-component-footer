@@ -65,8 +65,8 @@ class SiteFooter extends React.Component {
                 <div class="col-12 col-sm-8">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-4">
-                            <p><a href="${config.LMS_BASE_URL}/courses">Các khóa học</a></p>
-                            <p><a href="${config.LMS_BASE_URL}/faq">Các câu hỏi thường gặp</a></p>
+                            <p><a href={config.LMS_BASE_URL + "/courses"}>Các khóa học</a></p>
+                            <p><a href={config.LMS_BASE_URL + "/faq"}>Các câu hỏi thường gặp</a></p>
                             <p><a href="https://discord.com/channels/962380027536764968/962380027972968450">Trung tâm trợ giúp</a></p>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4">
