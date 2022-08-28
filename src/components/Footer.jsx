@@ -55,24 +55,24 @@ class SiteFooter extends React.Component {
                 <div class="col-12 col-sm-4">
                     <img src={LogoLargeImg} class="img-responsive logo" />
                     <p class="my-3">Kết nối với chúng tôi:</p>
-                    <a href="#" target="_blank" class="social-icon">
+                    <a href="https://www.facebook.com/ohstem.aitt/" target="_blank" class="social-icon">
                       <img src={FacebookImg} />
                     </a>
-                    <a href="#" target="_blank" class="social-icon">
+                    <a href="https://www.youtube.com/c/Ohstem" target="_blank" class="social-icon">
                       <img src={YoutubeImg} />
                     </a>
                 </div>
                 <div class="col-12 col-sm-8">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-4">
-                            <p><a href="#">Các khóa học</a></p>
-                            <p><a href="#">Các câu hỏi thường gặp</a></p>
-                            <p><a href="#">Trung tâm trợ giúp</a></p>
+                            <p><a href="{config.LMS_BASE_URL}/courses">Các khóa học</a></p>
+                            <p><a href="{config.LMS_BASE_URL}/faq">Các câu hỏi thường gặp</a></p>
+                            <p><a href="https://discord.com/channels/962380027536764968/962380027972968450">Trung tâm trợ giúp</a></p>
                         </div>
                         <div class="col-12 col-sm-6 col-md-4">
-                            <p><a href="#">Giới thiệu về OhStem</a></p>
-                            <p><a href="#">Quyền riêng tư</a></p>
-                            <p><a href="#">Điều khoản</a></p>
+                            <p><a href="https://ohstem.vn/ve-ohstem-education/">Giới thiệu về OhStem</a></p>
+                            <p><a href="https://ohstem.vn/chinh-sach-bao-mat-thong-tin/">Quyền riêng tư</a></p>
+                            <p><a href="https://ohstem.vn/chinh-sach-quy-dinh-chung/">Điều khoản</a></p>
                         </div>
                         <div class="col-sm-12 col-md-4 credit">
                             <p><img src={OpenEdxImg} /></p>
