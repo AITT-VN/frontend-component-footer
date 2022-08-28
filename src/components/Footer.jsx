@@ -50,12 +50,14 @@ class SiteFooter extends React.Component {
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-4">
-                    <img src="static/images/home/s1/logo.png" class="img-responsive logo">
+                    <img src="static/images/home/s1/logo.png" class="img-responsive logo" />
                     <p class="my-3">Kết nối với chúng tôi:</p>
-                    <a href="#" target="_blank" class="social-icon"><img
-                            src="static/images/home/footer/facebook.png"></a>
-                    <a href="#" target="_blank" class="social-icon"><img
-                            src="static/images/home/footer/youtube.png"></a>
+                    <a href="#" target="_blank" class="social-icon">
+                      <img src="static/images/home/footer/facebook.png" />
+                    </a>
+                    <a href="#" target="_blank" class="social-icon">
+                      <img src="static/images/home/footer/youtube.png" />
+                    </a>
                 </div>
                 <div class="col-12 col-sm-8">
                     <div class="row">
@@ -70,8 +72,8 @@ class SiteFooter extends React.Component {
                             <p><a href="#">Điều khoản</a></p>
                         </div>
                         <div class="col-sm-12 col-md-4 credit">
-                            <p><img src="static/images/home/footer/openedx.png"></p>
-                            <p><img src="static/images/home/footer/tutor.png"></p>
+                            <p><img src="static/images/home/footer/openedx.png" /></p>
+                            <p><img src="static/images/home/footer/tutor.png" /></p>
                         </div>
                     </div>
                 </div>
