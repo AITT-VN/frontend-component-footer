@@ -1,8 +1,12 @@
+.logo {
+  height: 50px;
+}
+
 .footer {
   background-color: #333333;
   color: #ffffff;
   position: relative;
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 .footer a {
